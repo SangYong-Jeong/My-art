@@ -1,0 +1,53 @@
+/*************** Global  **************/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+html, body {font-size: 16px;}
+
+/*************** header-wrapper  **************/
+.header-wrapper {font-size: 1.5em; font-weight: 400; display: flex; justify-content: space-between; padding: 1em .75em; align-items: center;}
+.header-wrapper h1.logo {padding: .5em .75em; cursor: pointer;}
+.header-wrapper h1.logo:hover {background-color: #ccc;}
+.header-wrapper .navi {padding: .5em .5em;}
+.header-wrapper .navi:hover {background-color: #ccc;}
+.header-wrapper .navi a {color: inherit; text-decoration: none;}
+
+/*************** main-wrapper  **************/
+.main-wrapper .img-wrap {max-width: 1500px; margin: auto; display: flex;}
+.main-wrapper .img-wrap .img-wp .imgs img {margin-bottom: -.5em; transition: all .5s;}
+.main-wrapper .img-wrap .img-wp .imgs img:hover {opacity: .7; cursor: pointer;}
+
+/*************** about-wrapper  **************/
+.about-wrapper {background-color: #eee;}
+.wrapper {max-width: 1050px; margin: auto; padding: 5em 1em 0 1em;}
+.about-wrapper h2.title {font-size: 1.75em; text-align: center; margin-bottom: 1.75em;}
+.about-wrapper .profile-wrap {max-width: 290px; margin: 0 auto 3em auto;}
+.about-wrapper p.content {text-align: center; line-height: 1.25em; color: #000; font-weight: 300; margin-bottom: 1.5em;}
+.about-wrapper h3.title {color: #f50; text-align: center; font-size: 1.125em; margin-bottom: 1.125em;}
+.about-wrapper h4.title {text-align: center; font-weight: 500; margin-bottom: .25em	;}
+.about-wrapper .input {width: 100%; margin-bottom: 1.25em; border: 1px solid #bbb; padding: .5em;}
+.about-wrapper .bt-send {background-color: #777; color: #fff; border: none; width: 100%; font-weight: 400; padding: .75em;}
+.about-wrapper .bt-send:hover {background-color: #ccc; color: #000;}
+/*************** footer-wrapper  **************/
+.footer-wrapper {background-color: #eee; padding: 2.25em 0em 5em 0; text-align: center;}
+.footer-wrapper a {text-decoration: underline;}
+.footer-wrapper a:hover {color: rgb(15, 131, 54);}
+
+
+/************ 반응형  ***********/
+@media screen and (max-width: 1199px) {
+	.wrapper {padding: 5em 5em 0 5em;}
+}
+
+@media screen and (max-width: 991px) {
+	.wrapper {padding: 5em 7em 0 7em;}
+}
+
+@media screen and (max-width: 767px) {
+	.wrapper {padding: 5em 9em 0 9em;}
+}
+
+@media screen and (max-width: 575px) {
+	.wrapper {padding: 5em 5.75em 0 5.75em;}
+	.main-wrapper .img-wrap {display: block;}
+}
